@@ -36,6 +36,31 @@
 <a id="welcome-to-geobricks" class="anchor" href="#welcome-to-geobricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Geobricks!</h3>
 
 <p>We are still working on our amazing website, please come back soon to visit us!</p>
+
+<h2>
+<a id="quick-start-download-modis-tiles" class="anchor" href="#quick-start-download-modis-tiles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick start: Download MODIS tiles</h2>
+
+<div class="highlight highlight-python"><pre><span class="pl-k">from</span> geobricks_downloader.download.downloader <span class="pl-k">import</span> Downloader
+
+
+layers_to_be_downloaded <span class="pl-k">=</span> [
+    {
+        <span class="pl-s1"><span class="pl-pds">'</span>file_name<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>my_modis_tile.hdf<span class="pl-pds">'</span></span>,
+        <span class="pl-s1"><span class="pl-pds">'</span>file_path<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>ftp://ladsweb.nascom.nasa.gov/allData/5/MOD13Q1/2014/001/MOD13Q1.A2014001.h02v08.005.2014018082809.hdf<span class="pl-pds">'</span></span>
+    }
+]
+target <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>/home/user/Desktop<span class="pl-pds">'</span></span>
+d <span class="pl-k">=</span> Downloader(<span class="pl-s1"><span class="pl-pds">'</span>modis<span class="pl-pds">'</span></span>, target, layers_to_be_downloaded)
+d.download()</pre></div>
+
+<p>The <code>layers_to_be_downloaded</code> variable is a Python array, and each element must have the following structure:</p>
+
+<div class="highlight highlight-python"><pre>{
+    <span class="pl-s1"><span class="pl-pds">'</span>file_path<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>ftp://path/to/your/resource<span class="pl-pds">'</span></span>,
+    <span class="pl-s1"><span class="pl-pds">'</span>file_name<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>my_modis_tile.hdf<span class="pl-pds">'</span></span>
+}</pre></div>
+
+<p>where <code>file_path</code> is the URL to the remote resource to be downloaded and <code>file_name</code> is the name of the file that will be stored on the local file system. This method is quite tedious and not very convenient. The best way to take advantage of the Geobricks Downloader is through the use of its plug-ins, as described in the next example.</p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
