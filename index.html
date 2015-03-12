@@ -1,82 +1,198 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Geobricks by geobricks</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  </head>
-  <body>
+    <head>
+        <title>Geobricks</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/jquery.scrolly.min.js"></script>
+        <script src="js/libs/skel.min.js"></script>
+        <script src="js/libs/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+        <link href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+        <script data-main='js/main' src='js/libs/require.js'></script>
+    </head>
 
-      <header>
-        <h1>Geobricks</h1>
-        <p>open source web gis</p>
-      </header>
+    <body>
 
-      <div id="banner">
-        <span id="logo"></span>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="container">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#work">Staff</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <a href="https://github.com/geobricks" class="button fork"><strong>View On GitHub</strong></a>
-      </div><!-- end banner -->
+        <!-- Home -->
+        <div class="wrapper style1 first">
+            <article class="container" id="top">
+                <div class="row">
+                    <div class="4u">
+                        <!-- <span class="image fit"><img src="images/pic00.jpg" alt="" /></span> -->
+                        <span class="image fit"><img src="images/geobricks.png" alt="" /></span>
+                    </div>
+                    <div class="8u">
+                        <header>
+                            <h1>Welcome to <strong>Geobricks</strong>.</h1>
+                        </header>
+                        <p>Everything about <strong>Geobricks</strong> in one convenient place.</p>
+                        <a href="#portfolio" class="button big scrolly">Projects</a>
+                    </div>
+                </div>
+            </article>
+        </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a id="welcome-to-geobricks" class="anchor" href="#welcome-to-geobricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Geobricks!</h1>
+        <!-- Portfolio -->
+        <div class="wrapper style3">
+            <article id="portfolio">
+                <header>
+                    <h2>Portfolio</h2>
+                    <p>Open source solutions for web GIS.</p>
+                </header>
+                <div class="container">
+                    <div class="row">
+                        <div class="4u">
+                            <article class="box style2">
+                                <!--<a href="#" class="image featured"><img src="images/pic03.jpg" alt="Geobricks MODIS" name="Geobricks MODIS"/></a>-->
+                                <h3><a href="#">Geobricks MODIS</a></h3>
+                                <p>MODIS plug-in for Geobricks downloader.</p>
+                            </article>
+                        </div>
+                        <div class="4u">
+                            <article class="box style2">
+                                <!--<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+                                <h3><a href="#">Geobricks TRMM</a></h3>
+                                <p>MODIS plug-in for Geobricks downloader.</p>
+                            </article>
+                        </div>
+                        <div class="4u">
+                            <article class="box style2">
+                                <!--<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>-->
+                                <h3><a href="#">Geobricks Landsat</a></h3>
+                                <p>MODIS plug-in for Geobricks downloader.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+                    <a href="#work" class="button big scrolly">Staff</a>
+                </footer>
 
-<p>We are still working on our amazing website, please come back soon to visit us! <a href="test.md">internal page</a></p>
+            </article>
+        </div>
 
-<h2>
-<a id="quick-start-download-modis-tiles" class="anchor" href="#quick-start-download-modis-tiles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick start: Download MODIS tiles</h2>
+        <!-- Work -->
+        <div class="wrapper style2">
+            <article id="work">
+                <header>
+                    <h2>Here's all the stuff I do.</h2>
+                    <p>Odio turpis amet sed consequat eget posuere consequat.</p>
+                </header>
+                <div class="container">
+                    <div class="row">
+                        <div class="4u">
+                            <section class="box style1">
+                                <span class="icon featured fa-comments-o"></span>
+                                <h3>Simone Murzilli</h3>
+                                <p>Amante della forma.</p>
+                            </section>
+                        </div>
+                        <div class="4u">
+                            <section class="box style1">
+                                <span class="icon featured fa-camera-retro"></span>
+                                <h3>Guido Barbaglia</h3>
+                                <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+                    <a href="#contact" class="button big scrolly">Get in touch with me</a>
+                </footer>
+            </article>
+        </div>
 
-<div class="highlight highlight-python"><pre><span class="pl-k">from</span> geobricks_downloader.download.downloader <span class="pl-k">import</span> Downloader
 
 
-layers_to_be_downloaded <span class="pl-k">=</span> [
-    {
-        <span class="pl-s1"><span class="pl-pds">'</span>file_name<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>my_modis_tile.hdf<span class="pl-pds">'</span></span>,
-        <span class="pl-s1"><span class="pl-pds">'</span>file_path<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>ftp://ladsweb.nascom.nasa.gov/allData/5/MOD13Q1/2014/001/MOD13Q1.A2014001.h02v08.005.2014018082809.hdf<span class="pl-pds">'</span></span>
-    }
-]
-target <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>/home/user/Desktop<span class="pl-pds">'</span></span>
-d <span class="pl-k">=</span> Downloader(<span class="pl-s1"><span class="pl-pds">'</span>modis<span class="pl-pds">'</span></span>, target, layers_to_be_downloaded)
-d.download()</pre></div>
+        <!-- Contact -->
+        <div class="wrapper style4">
+            <article id="contact" class="container 75%">
+                <header>
+                    <h2>We'd love to hear from you.</h2>
+                    <p>Just drop us a message and we'll reply as soon as possible.</p>
+                </header>
+                <div>
+                    <div class="row">
+                        <div class="12u">
+                            <form method="post" action="#">
+                                <div>
+                                    <div class="row">
+                                        <div class="6u">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div class="6u">
+                                            <input type="text" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="12u">
+                                            <input type="text" name="subject" id="subject" placeholder="Subject" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="12u">
+                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row 200%">
+                                        <div class="12u">
+                                            <ul class="actions">
+                                                <li><input type="submit" value="Send Message" /></li>
+                                                <li><input type="reset" value="Clear Form" class="alt" /></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="12u">
+                            <hr />
+                            <h3>Geobricks on the Web</h3>
+                            <ul class="social">
+                                <li><a href="https://twitter.com/GeoBricks" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+                                <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+                            </ul>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <ul id="copyright">
+                        <li>&copy; Geobricks 2015. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </footer>
+            </article>
+        </div>
 
-<p>The <code>layers_to_be_downloaded</code> variable is a Python array, and each element must have the following structure:</p>
+    </body>
 
-<div class="highlight highlight-python"><pre>{
-    <span class="pl-s1"><span class="pl-pds">'</span>file_path<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>ftp://path/to/your/resource<span class="pl-pds">'</span></span>,
-    <span class="pl-s1"><span class="pl-pds">'</span>file_name<span class="pl-pds">'</span></span>: <span class="pl-s1"><span class="pl-pds">'</span>my_modis_tile.hdf<span class="pl-pds">'</span></span>
-}</pre></div>
-
-<p>where <code>file_path</code> is the URL to the remote resource to be downloaded and <code>file_name</code> is the name of the file that will be stored on the local file system. This method is quite tedious and not very convenient. The best way to take advantage of the Geobricks Downloader is through the use of its plug-ins, as described in the next example.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-54093846-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
 </html>
