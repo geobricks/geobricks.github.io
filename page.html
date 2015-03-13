@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <!-- Metadata -->
+    <title>Geobricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery.scrolly.min.js"></script>
+    <script src="js/libs/skel.min.js"></script>
+    <script src="js/libs/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/markdown.css" />
+    <link rel="stylesheet" href="css/prettify.css" />
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=python&lang=javascript&skin=doxy"></script>
+    <script data-main="js/main" src="js/libs/require.js"></script>
+
+</head>
+
+<body>
+
+<!-- Nav -->
+<nav id="nav">
+    <ul class="container">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#work">Team</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<div class="wrapper style1 first" style="padding-top: 5em;">
+    <article class="container" id="top">
+        <div class="row">
+            <div class="12u">
+                <div class="inner_page">
+                    <div class="inner_page">
+                        <h1 id="geobricks-modis">Geobricks MODIS</h1>
+                        <p>The MODIS plug-in for the Geobricks downloader provides methods to filter the MODIS FTP based on the product code, the datetime and the geographic area. As istance, the following represents the list of MODIS tiles covering Angola for the MOD13Q1 product on January 1st 2002:</p>
+<pre class="prettyprint"><code class="lang-json">[
+    {
+    &quot;file_name&quot;: &quot;MOD13Q1.A2012001.h19v09.005.2012019104600.hdf&quot;,
+    &quot;size&quot;: &quot;196646026&quot;,
+    &quot;file_path&quot;: &quot;ftp://ladsweb.nascom.nasa.gov/allData/5/MOD13Q1/2012/001/MOD13Q1.A2012001.h19v09.005.2012019104600.hdf&quot;,
+    &quot;label&quot;: &quot;H 19, V 09 (196.65 MB)&quot;
+    },
+    {
+    &quot;file_name&quot;: &quot;MOD13Q1.A2012001.h19v10.005.2012019104816.hdf&quot;,
+    &quot;size&quot;: &quot;192004771&quot;,
+    &quot;file_path&quot;: &quot;ftp://ladsweb.nascom.nasa.gov/allData/5/MOD13Q1/2012/001/MOD13Q1.A2012001.h19v10.005.2012019104816.hdf&quot;,
+    &quot;label&quot;: &quot;H 19, V 10 (192.0 MB)&quot;
+    },
+    {
+    &quot;file_name&quot;: &quot;MOD13Q1.A2012001.h20v09.005.2012019103646.hdf&quot;,
+    &quot;size&quot;: &quot;217254791&quot;,
+    &quot;file_path&quot;: &quot;ftp://ladsweb.nascom.nasa.gov/allData/5/MOD13Q1/2012/001/MOD13Q1.A2012001.h20v09.005.2012019103646.hdf&quot;,
+    &quot;label&quot;: &quot;H 20, V 09 (217.25 MB)&quot;
+    },
+    {
+    &quot;file_name&quot;: &quot;MOD13Q1.A2012001.h20v10.005.2012019104512.hdf&quot;,
+    &quot;size&quot;: &quot;240262517&quot;,
+    &quot;file_path&quot;: &quot;ftp://ladsweb.nascom.nasa.gov/allData/5/MOD13Q1/2012/001/MOD13Q1.A2012001.h20v10.005.2012019104512.hdf&quot;,
+    &quot;label&quot;: &quot;H 20, V 10 (240.26 MB)&quot;
+    }
+    ]
+</code></pre>
+                        <h1 id="installation">Installation</h1>
+                        <p>The plug-in is distributed through PyPi and can be installed by typing the following command in the console:</p>
+<pre class="prettyprint"><code>pip install geobricksmodis
+</code></pre><h1 id="examples">Examples</h1>
+                        <h2 id="get-products-list">Get products list</h2>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    products = c.list_products()
+</code></pre>
+                        <h2 id="get-available-years">Get available years</h2>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    years = c.list_years(&#39;MOD13A2&#39;)
+</code></pre>
+                        <h2 id="get-available-days">Get available days</h2>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    days = c.list_days(&#39;MOD13A2&#39;, &#39;2010&#39;)
+</code></pre>
+                        <h2 id="get-available-layers">Get available layers</h2>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    layers = c.list_layers(&#39;MOD13A2&#39;, &#39;2010&#39;, &#39;001&#39;)
+</code></pre>
+                        <h2 id="get-a-subset-of-layers">Get a subset of layers</h2>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    layers = c.list_layers_subset(&#39;MOD13A2&#39;, &#39;2010&#39;, &#39;001&#39;, 5, 7, 3, 9)
+</code></pre>
+                        <h2 id="get-layers-by-country-gaul-code">Get layers by country GAUL code</h2>
+                        <p>This method retrieves the list of MODIS tiles for the given product, year and day, filtered by the country GAUL code. The example below gets the layers of Afghanistan (<code>1</code>) and Angola (<code>8</code>).</p>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    layers = c.list_layers_countries_subset_gaul(&#39;MOD13A2&#39;, &#39;2010&#39;, &#39;001&#39;, &#39;8,1&#39;)
+</code></pre>
+                        <h2 id="get-layers-by-country-iso2-code">Get layers by country ISO2 code</h2>
+                        <p>This method retrieves the list of MODIS tiles for the given product, year and day, filtered by the country ISO2 code. The example below gets the layers of Italy (<code>it</code>) and France (<code>FR</code>). Codes can be either lower or upper case.</p>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    layers = c.list_layers_countries_subset_iso2(&#39;MOD13A2&#39;, &#39;2010&#39;, &#39;001&#39;, &#39;it,FR&#39;)
+</code></pre>
+                        <h2 id="get-layers-by-country-iso3-code">Get layers by country ISO3 code</h2>
+                        <p>This method retrieves the list of MODIS tiles for the given product, year and day, filtered by the country ISO3 code. The example below gets the layers of Italy (<code>ita</code>) and France (<code>FRA</code>). Codes can be either lower or upper case.</p>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    layers = c.list_layers_countries_subset_iso3(&#39;MOD13A2&#39;, &#39;2010&#39;, &#39;001&#39;, &#39;ITA,fra&#39;)
+</code></pre>
+                        <h2 id="get-layers-by-country-code">Get layers by country code</h2>
+                        <p>The previous methods can be used in combined way: layers can be filtered by means of GAUL (<code>8</code>), ISO3 (<code>ITA</code>) and ISO2 (<code>fr</code>) codes. </p>
+<pre class="prettyprint"><code class="lang-python">from geobricks_modis.core import modis_core as c
+
+
+    layers = c.list_layers_countries_subset(&#39;MOD13A2&#39;, &#39;2010&#39;, &#39;001&#39;, &#39;8,ITA,fr&#39;)
+</code></pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<!-- Contact -->
+<div class="wrapper style4" style="padding-top: 16px;">
+    <article id="contact" class="container">
+        <div>
+            <div class="row">
+                <div class="12u">
+                    <hr />
+                    <h3>Geobricks in the Web</h3>
+                    <ul class="social">
+                        <li><a href="https://github.com/geobricks" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="https://www.facebook.com/GeoBricks" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://twitter.com/GeoBricks" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <!--<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>-->
+                        <!--<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>-->
+                    </ul>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul id="copyright">
+                <li>&copy; Geobricks 2015. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </article>
+</div>
+
+</body>
+
+</html>

@@ -14,7 +14,8 @@ module.exports = function (grunt) {
         encoding: 'utf8'
     }]);
     var template = Handlebars.compile(source);
-    var html = '';
+    var html = '<div class="row">';
+    var counter = 1;
 
     /* Iterate over modules directory. */
     grunt.file.recurse('js/modules/', function callback(abspath, rootdir, subdir, filename) {
@@ -30,13 +31,19 @@ module.exports = function (grunt) {
             var dynamic_data = {
                 label: json.label['en'],
                 description: json.description,
-                github_url: json.repository.url
+                github_url: json.repository.url,
+                language: json.language
             };
             html += template(dynamic_data);
+
+            if (counter++ % 3 == 0)
+                html += '</div><div class="row">';
 
         }
 
     });
+
+    html += '</div>';
 
     /* Load home page. */
     source = grunt.file.read('html/index.html', [, {encoding: 'utf8'}]);
