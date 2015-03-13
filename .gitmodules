@@ -13,3 +13,15 @@
 [submodule "js/modules/geobricks_raster_correlation"]
 	path = js/modules/geobricks_raster_correlation
 	url = https://github.com/geobricks/geobricks_raster_correlation.git
+[submodule "js/modules/geobricks_ui"]
+	path = js/modules/geobricks_ui
+	url = https://github.com/geobricks/geobricks_ui.git
+[submodule "js/modules/geobricks_ui_distribution"]
+	path = js/modules/geobricks_ui_distribution
+	url = https://github.com/geobricks/geobricks_ui_distribution.git
+[submodule "js/modules/geobricks_ui_download"]
+	path = js/modules/geobricks_ui_download
+	url = https://github.com/geobricks/geobricks_ui_download.git
+[submodule "js/modules/geobricks_ui_download_trmm"]
+	path = js/modules/geobricks_ui_download_trmm
+	url = https://github.com/geobricks/geobricks_ui_download_trmm.git
