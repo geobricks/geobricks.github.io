@@ -1,3 +1,6 @@
 [submodule "js/modules/fenix-ui-common"]
 	path = js/modules/fenix-ui-common
 	url = https://github.com/FENIX-Platform/fenix-ui-common.git
+[submodule "js/modules/geobricks_modis"]
+	path = js/modules/geobricks_modis
+	url = https://github.com/geobricks/geobricks_modis.git
