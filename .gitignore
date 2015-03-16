@@ -1,2 +1,3 @@
 *.github.io.iml
 /node_modules/
+/projects/*.html
