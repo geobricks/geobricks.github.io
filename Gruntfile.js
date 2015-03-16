@@ -3,6 +3,7 @@
 module.exports = function (grunt) {
 
     var Handlebars = require('handlebars');
+    var _ = require('underscore');
 
     /* Initiate configuration. */
     grunt.initConfig({
@@ -43,12 +44,20 @@ module.exports = function (grunt) {
         }
 
         /* Copy README.md files. */
-        if (subdir.indexOf('node_modules') < 0 && filename === 'README.html') {
+        if (subdir.indexOf('node_modules') < 0 && filename === 'README.md') {
 
-            /* Copy files in the projects folder. */
-            grunt.file.copy(abspath, rootdir + '../../projects/' + subdir + '.html', [, {
-                encoding: 'utf8'
-            }]);
+            /* Convert markdown to HTML. */
+            var marked = require('marked');
+            var html2 = marked(grunt.file.read(abspath));
+
+            /* Add generated HTML to the template. */
+            var source = grunt.file.read('html/inner_page_template.html', [, {encoding: 'utf8'}]);
+            var template2 = Handlebars.compile(source);
+            var dynamic_data2 = {content: html2};
+            var page_content = template2(dynamic_data2);
+
+            /* Write inner pages in the projects folder. */
+            grunt.file.write(rootdir + '../../projects/' + subdir + '.html', page_content, [, {encoding: 'utf8'}]);
 
         }
 

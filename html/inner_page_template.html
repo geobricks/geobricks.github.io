@@ -70,72 +70,7 @@
             <div class="12u">
                 <div class="inner_page">
                     <div class="inner_page">
-                        <h1 id="geobricks-rest-engine">Geobricks REST Engine</h1>
-<p>The main purpose of this project is to provide a deployable and configurable entry point for the Geobricks REST services. </p>
-<p>The Geobricks project takes advantage of the <a href="http://flask.pocoo.org/docs/0.10/blueprints/">blueprints</a> concept to create modular components which provide services to the users. This project consist of a single <a href="../blob/master/geobricks_rest_engine/rest/engine.py">REST service</a> which loads modules at the start-up of the application and provides a single entry point to the Geobricks web services. </p>
-<p>The REST engine can be easilly configured through a simple <a href="../blob/master/geobricks_rest_engine/config/settings.py">settings file</a> which contains an array of objects named <code>modules</code>. Each object describes a Geobricks service and provides the parameters to load the module. The following example describes the configuration needed to load the Geobricks MODIS plug-in:</p>
-<pre><code class="lang-python">{
-  &quot;description&quot;: &quot;MODIS&quot;,
-  &quot;path_to_the_blueprint&quot;: &quot;geobricks_modis.rest.modis_rest&quot;,
-  &quot;blueprint_name&quot;: &quot;modis&quot;,
-  &quot;url_prefix&quot;: &quot;/browse/modis&quot;
-}
-</code></pre>
-<p>The following table provides a description of each parameter of the configuration objects.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th style="text-align:center">Mandatory</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>description</td>
-<td>Human readable description. This parameter is only used to make the configuration file more comprehensible and easy to mantain.</td>
-<td style="text-align:center">No</td>
-</tr>
-<tr>
-<td>path_to_the_blueprint</td>
-<td>The import path to the Python file which contains the blueprint.</td>
-<td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>blueprint_name</td>
-<td>The name of the blueprint variable.</td>
-<td style="text-align:center">Yes</td>
-</tr>
-<tr>
-<td>url_prefix</td>
-<td>Every web service defined by the blueprint will be preceeded by this string.</td>
-<td style="text-align:center">Yes</td>
-</tr>
-</tbody>
-</table>
-<p>The <code>url_prefix</code> is very useful to group all the services provided by a module with a single entry point. As istance, every service provided by the Geobricks MODIS plug-in will be introduced by the <code>/browse/modis</code> prefix. The next table shows how the URL&#39;s are modified by the prefix.</p>
-<table>
-<thead>
-<tr>
-<th>Original URL</th>
-<th>Prefix</th>
-<th>REST Engine URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://example.com/">http://example.com/</a></td>
-<td>/browse/modis/</td>
-<td><a href="http://example.com/browse/modis/">http://example.com/browse/modis/</a></td>
-</tr>
-<tr>
-<td><a href="http://example.com/MOD13Q1/">http://example.com/MOD13Q1/</a></td>
-<td>/browse/modis/</td>
-<td><a href="http://example.com/browse/modis/MOD13Q1/">http://example.com/browse/modis/MOD13Q1/</a></td>
-</tr>
-</tbody>
-</table>
-
+                        {{{content}}}
                     </div>
                 </div>
             </div>
