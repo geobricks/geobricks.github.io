@@ -4,6 +4,3 @@
 [submodule "js/modules/geobricks_rest_engine"]
 	path = js/modules/geobricks_rest_engine
 	url = https://github.com/geobricks/geobricks_rest_engine.git
-[submodule "js/modules/geobricks_modis"]
-	path = js/modules/geobricks_modis
-	url = https://github.com/geobricks/geobricks_modis.git

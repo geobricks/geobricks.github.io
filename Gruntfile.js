@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     grunt.file.recurse('js/modules/', function callback(abspath, rootdir, subdir, filename) {
 
         /* Read package.json excluding plugins. */
-        if (subdir.indexOf('node_modules')  < 0 && filename === 'package.json') {
+        if (subdir.indexOf('node_modules') < 0 && filename === 'package.json') {
 
             var json = grunt.file.readJSON(abspath, [, {
                 encoding: 'utf8'
@@ -39,6 +39,16 @@ module.exports = function (grunt) {
 
             if (counter++ % 3 == 0)
                 html += '</div><div class="row">';
+
+        }
+
+        /* Copy README.md files. */
+        if (subdir.indexOf('node_modules') < 0 && filename === 'README.html') {
+
+            /* Copy files in the projects folder. */
+            grunt.file.copy(abspath, rootdir + '../../projects/' + subdir + '.html', [, {
+                encoding: 'utf8'
+            }]);
 
         }
 
