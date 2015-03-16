@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                 description: json.description,
                 github_url: json.repository.url,
                 language: json.language,
-                page_link: '/geobricks/projects/' + json.name + '.html'
+                page_link: '/projects/' + json.name + '.html'
             };
             html += template(dynamic_data);
 
