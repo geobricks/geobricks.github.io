@@ -18,4 +18,13 @@
     text-align: left;
     padding: 1em !important; }
 
+table thead {
+  background-color: #303030;
+  color: #fff;
+  font-weight: 600; }
+  table thead th {
+    padding: 1em; }
+table tbody td {
+  padding: 1em; }
+
 /*# sourceMappingURL=markdown.css.map */

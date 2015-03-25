@@ -34,6 +34,7 @@
     "handlebars": "~3.0.0"
   },
   "dependencies": {
-    "marked": "~0.3.3"
+    "marked": "~0.3.3",
+    "highlight.js": "~8.4.0"
   }
 }

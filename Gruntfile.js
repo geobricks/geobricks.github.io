@@ -56,6 +56,9 @@ module.exports = function (grunt) {
             var dynamic_data2 = {content: html2};
             var page_content = template2(dynamic_data2);
 
+            /* Prettify source code. */
+            page_content = page_content.replace(/<pre>/g, '<pre class="prettyprint">');
+
             /* Write inner pages in the projects folder. */
             grunt.file.write(rootdir + '../../projects/' + subdir + '.html', page_content, [, {encoding: 'utf8'}]);
 

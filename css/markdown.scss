@@ -22,3 +22,19 @@
     padding: 1em !important;
   }
 }
+
+table {
+  thead {
+    background-color: #303030;
+    color: #fff;
+    font-weight: 600;
+    th {
+      padding: 1em;
+    }
+  }
+  tbody {
+    td {
+      padding: 1em;
+    }
+  }
+}
