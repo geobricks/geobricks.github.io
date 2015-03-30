@@ -27,4 +27,8 @@ table thead {
 table tbody td {
   padding: 1em; }
 
+.project {
+  text-align: right !important;
+  background-color: #fff !important; }
+
 /*# sourceMappingURL=markdown.css.map */
