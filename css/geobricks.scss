@@ -3,6 +3,7 @@
   background-color: #fff;
   padding: 0.5em;
   cursor: pointer;
+  min-height: 15em;
   img {
     float: right;
     padding-left: 0.25em;
@@ -21,8 +22,6 @@
     text-decoration: underline;
   }
 }
-
-/* Portraits */
 
 .guido {
   width: 200px;
