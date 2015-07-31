@@ -61,27 +61,38 @@
                     <h1>
                         Projects
                     </h1>
+                    <small>
+                        Open source solutions for web GIS.
+                    </small>
                 </div>
             </div>
+            <br>
             <div class='row'>
                 {{#each projects}}
                     {{#if_is_row @index}}
                     <div class='row'>
                     {{/if_is_row}}
-                    <div class='col-xs-3'>
+                    <div class='col-xs-4'>
                         <div class='panel panel-default'>
                             <div class='panel-heading'>
                                 <b>
-                                    {{this.name}}
+                                    <a target='_blank' href='{{this.html_url}}'>
+                                        {{this.name}}
+                                    </a>
                                 </b>
                             </div>
                             <div class='panel-body'>
                                 {{this.description}}
                             </div>
-                            <div class='panel-footer text-right'>
-                                <a target='_blank' href='{{this.html_url}}'>
-                                    Open on GitHub <i class='fa fa-github'></i>
-                                </a>
+                            <div class='panel-footer'>
+                                <div class='row'>
+                                    <div class='col-xs-6'>
+                                        <iframe src="https://ghbtns.com/github-btn.html?user=geobricks&repo={{this.name}}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+                                    </div>
+                                    <div class='col-xs-6'>
+                                        <iframe src="https://ghbtns.com/github-btn.html?user=geobricks&repo={{this.name}}&type=fork&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
