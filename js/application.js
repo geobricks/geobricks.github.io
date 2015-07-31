@@ -92,6 +92,33 @@ define(['jquery',
                     description: 'This Leaflet plugin extends the L.GeoJSON layer using Google polyline encoding algorithm, allowing an optimized data transfer. The algorithm is documented in Google Maps API Docs.',
                     html_url: 'https://github.com/geobricks/Leaflet.GeoJSON.Encoded'
                 }
+            ],
+            containers: [
+                {
+                    name: 'Geobricks MODIS',
+                    description: 'Acquire MODIS Data.',
+                    html_url: 'https://hub.docker.com/'
+                }
+            ],
+            developers: [
+                {
+                    name: 'Simone Murzilli',
+                    image: 'images/simone.png',
+                    description: 'Amante della forma.',
+                    html_url: 'https://hub.docker.com/'
+                },
+                {
+                    name: 'Guido Barbaglia',
+                    image: 'images/guido.png',
+                    description: 'Amante della forma.',
+                    html_url: 'https://hub.docker.com/'
+                },
+                {
+                    name: 'Stefano Cudini',
+                    image: 'images/stefano.png',
+                    description: 'Amante della forma.',
+                    html_url: 'https://hub.docker.com/'
+                }
             ]
         };
         var html = template(dynamic_data);

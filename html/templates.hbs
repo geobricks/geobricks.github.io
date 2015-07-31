@@ -104,6 +104,95 @@
                     {{/if_is_row}}
                 {{/each}}
             </div>
+            <hr>
+            <div class='row'>
+                <div class='col-xs-12 text-center'>
+                    <h1>
+                        Docker Containers
+                    </h1>
+                    <small>
+                        Start Playing with Geobricks in Few Minutes
+                    </small>
+                </div>
+            </div>
+            <br>
+            <div class='row'>
+                {{#each containers}}
+                    {{#if_is_row @index}}
+                    <div class='row'>
+                    {{/if_is_row}}
+                    <div class='col-xs-6'>
+                        <div class='panel panel-default'>
+                            <div class='panel-heading'>
+                                <b>
+                                    <a target='_blank' href='{{this.html_url}}'>
+                                        {{this.name}}
+                                    </a>
+                                </b>
+                            </div>
+                            <div class='panel-body'>
+                                {{this.description}}
+                            </div>
+                        </div>
+                    </div>
+                    {{#if_is_row @index}}
+                    </div>
+                    {{/if_is_row}}
+                {{/each}}
+            </div>
+            <hr>
+            <div class='row'>
+                <div class='col-xs-12 text-center'>
+                    <h1>
+                        Team
+                    </h1>
+                    <small>
+                        Meet the Geobricks Team
+                    </small>
+                </div>
+            </div>
+            <br>
+            <div class='row'>
+                {{#each developers}}
+                    {{#if_is_row @index}}
+                    <div class='row'>
+                    {{/if_is_row}}
+                    <div class='col-xs-4'>
+                        <div class='panel panel-default'>
+                            <div class='panel-heading'>
+                                <b>
+                                    {{this.name}}
+                                </b>
+                            </div>
+                            <div class='panel-body'>
+                                <div class='row'>
+                                    <img class='img-responsive img-circle center-block' src='{{image}}' style='width: 200px; height: 200px;'>
+                                </div>
+                                <br>
+                                <div class='row'>
+                                    <div class='col-xs-12 text-left'>
+                                        {{this.description}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel-footer'>
+                                <div class='row'>
+                                    <div class='col-xs-12 text-center'>
+                                        <i class='fa fa-google-plus'></i>
+                                        |
+                                        <i class='fa fa-linkedin'></i>
+                                        |
+                                        <i class='fa fa-twitter'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{#if_is_row @index}}
+                    </div>
+                    {{/if_is_row}}
+                {{/each}}
+            </div>
         </div>
         <hr>
         <div data-role='footer'>
