@@ -1,0 +1,93 @@
+.main-page {
+  background: url("../images/tile.jpg") repeat; }
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  float: right;
+  margin-right: 16px; }
+
+.item-pictures {
+  width: 64px;
+  height: 64px; }
+
+.item-box {
+  padding: 16px;
+  border-bottom: 1px solid #fff; }
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto; }
+
+.affix {
+  top: 0;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  background-color: #337ab7;
+  color: #fff;
+  z-index: 999;
+  width: 100% !important; }
+  .affix h3 {
+    color: #fff; }
+
+.affix-top {
+  position: static; }
+
+.events-header {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 8px;
+  line-height: 14px; }
+
+.user-footer {
+  height: 24px;
+  width: 24px;
+  float: right; }
+
+.activity-panel {
+  position: relative;
+  top: 0;
+  background-image: url("../images/card.jpg");
+  background-size: cover;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)); }
+
+.activity-total {
+  font-size: 75px;
+  z-index: 100;
+  color: #fff;
+  font-weight: 900;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; }
+
+.activity-location {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 24px;
+  font-size: 24px; }
+
+.activity-user {
+  height: 24px;
+  width: 24px;
+  float: right; }
+
+.logo {
+  margin-top: 4em;
+  width: 128px;
+  height: 128px; }
+
+.event-user {
+  height: 24px;
+  width: 24px;
+  float: left; }
+
+.event-user-name {
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 8px; }
+
+/*# sourceMappingURL=geobricks-travels.css.map */
