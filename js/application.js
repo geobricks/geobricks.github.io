@@ -95,7 +95,12 @@ define(['jquery',
             ],
             containers: [
                 {
-                    name: 'Geobricks MODIS',
+                    name: 'MODIS',
+                    description: 'Acquire MODIS Data.',
+                    html_url: 'https://hub.docker.com/'
+                },
+                {
+                    name: 'Rasters Correlation',
                     description: 'Acquire MODIS Data.',
                     html_url: 'https://hub.docker.com/'
                 }
