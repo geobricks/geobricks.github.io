@@ -7,7 +7,13 @@ require.config({
     paths: {
 
         application: root + '../',
-        APPLICATION: root + '../js/application'
+        APPLICATION: root + '../js/application',
+
+        router: root + '../',
+        ROUTER: root + '../js/router',
+
+        views: root + '../js/views'
+
     },
 
     shim: {
