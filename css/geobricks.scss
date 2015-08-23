@@ -18,3 +18,23 @@ body {
 .footer {
   color: #666666;
 }
+
+.panel-heading {
+  a:link {
+    color: #fff;
+  }
+  a:active {
+    color: #fff;
+  }
+  a:visited {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}

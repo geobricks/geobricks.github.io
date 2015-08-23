@@ -1,31 +1,41 @@
 <script type='text/x-handlebars-template' id='structure'>
     <div class='container bg-muted'>
-        <span class='hidden-xs hidden-sm hidden-md hidden-print'>
-            <br>
-            <div data-role='header'>
-                <div class='row'>
-                    <div class='col-lg-12 pull-right'>
-                        <span class='pull-right text-right menu-item'>
-                            <i class='fa fa-envelope'></i> Contacts
-                        </span>
-                        <span class='pull-right text-right menu-item'>
-                            <i class='fa fa-users'></i> Team
-                        </span>
-                        <span class='pull-right text-right menu-item'>
-                            <a href='#containers'>
-                                <i class='fa fa-archive'></i> Containers
-                            </a>
-                        </span>
-                        <span class='pull-right text-right menu-item'>
-                            <i class='fa fa-cogs'></i> Projects
-                        </span>
-                        <span class='pull-right text-right menu-item'>
-                            <i class='fa fa-home'></i> Home
-                        </span>
+        <section id='header'>
+            <div class='hidden-xs hidden-sm hidden-md hidden-print'>
+                <br>
+                <div data-role='header'>
+                    <div class='row'>
+                        <div class='col-lg-12 pull-right'>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#contacts'>
+                                    <i class='fa fa-envelope'></i> Contacts
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#team'>
+                                    <i class='fa fa-users'></i> Team
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#containers'>
+                                    <i class='fa fa-archive'></i> Containers
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#projects'>
+                                    <i class='fa fa-cogs'></i> Projects
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#home'>
+                                    <i class='fa fa-home'></i> Home
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </span>
+        </section>
         <hr>
         <div data-role='content'>
             <section id='home'>
@@ -78,8 +88,9 @@
                         <div class='row'>
                         {{/if_is_row}}
                         <div class='col-lg-4'>
-                            <div class='panel panel-default'>
+                            <div class='panel panel-primary'>
                                 <div class='panel-heading'>
+                                    <i class='fa fa-external-link'></i>
                                     <b>
                                         <a target='_blank' href='{{this.html_url}}'>
                                             {{this.name}}
@@ -90,8 +101,8 @@
                                     {{this.description}}
                                 </div>
                                 <div class='panel-footer'>
-                                    <div class='row' style='padding-right: 8px;'>
-                                        <div class='col-lg-12 pull-right'>
+                                    <div class='row' style='padding-right: 0px;'>
+                                        <div class='col-lg-12 pull-right' style='padding-right: 0px;'>
                                             <span class='pull-right text-right'>
                                                 <iframe src="https://ghbtns.com/github-btn.html?user=geobricks&repo={{this.name}}&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
                                             </span>
@@ -128,8 +139,9 @@
                         <div class='row'>
                         {{/if_is_row}}
                         <div class='col-lg-6'>
-                            <div class='panel panel-default'>
+                            <div class='panel panel-primary'>
                                 <div class='panel-heading'>
+                                    <i class='fa fa-external-link'></i>
                                     <b>
                                         <a target='_blank' href='{{this.html_url}}'>
                                             {{this.name}}
@@ -163,7 +175,7 @@
                 <div class='row'>
                     {{#each developers}}
                         <div class='col-lg-4'>
-                            <div class='panel panel-default'>
+                            <div class='panel panel-primary'>
                                 <div class='panel-heading'>
                                     <b>
                                         {{this.name}}
@@ -171,7 +183,7 @@
                                 </div>
                                 <div class='panel-body'>
                                     <div class='row'>
-                                        <img class='img-responsive img-circle center-block hidden-xs hidden-sm hidden-md hidden-print' src='{{image}}' style='width: 200px; height: 200px;'>
+                                        <img class='img-responsive img-circle center-block hidden-xs hidden-sm hidden-md hidden-print avatar' src='{{image}}'>
                                     </div>
                                     <br>
                                     <div class='row'>
@@ -183,9 +195,23 @@
                                 <div class='panel-footer'>
                                     <div class='row'>
                                         <div class='col-lg-12 text-center'>
-                                            <i class='fa fa-linkedin'></i>
-                                            |
-                                            <i class='fa fa-twitter'></i>
+                                            {{#if this.url_google}}
+                                                <a target='_blank' href='{{this.url_google}}'>
+                                                    <i class='fa fa-google-plus'></i>
+                                                </a>
+                                                |
+                                            {{/if}}
+                                            {{#if this.url_linkedin}}
+                                                <a target='_blank' href='{{this.url_linkedin}}'>
+                                                    <i class='fa fa-linkedin'></i>
+                                                </a>
+                                                |
+                                            {{/if}}
+                                            {{#if this.url_twitter}}
+                                                <a target='_blank' href='{{this.url_twitter}}'>
+                                                    <i class='fa fa-twitter'></i>
+                                                </a>
+                                            {{/if}}
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +228,7 @@
                             Contacts
                         </h1>
                         <small>
-                            We would love to hear from you
+                            We'd Love to Hear From You
                         </small>
                     </div>
                     <div class='col-lg-12'>
@@ -244,18 +270,16 @@
                 </div>
             </section>
             <hr>
-            <div data-role='footer' class='footer'>
-                <div class='row'>
-                    <div class='col-lg-12 text-center'>
-                        © Geobricks 2015. All rights reserved.
+            <section id='footer'>
+                <div data-role='footer' class='footer'>
+                    <div class='row'>
+                        <div class='col-lg-12 text-center'>
+                            © Geobricks 2015. All rights reserved.
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <hr>
         </div>
     </div>
 </script>
-
-<!--
-https://developmentseed.org/
--->

@@ -13,3 +13,16 @@ body {
 
 .footer {
   color: #666666; }
+
+.panel-heading a:link {
+  color: #fff; }
+.panel-heading a:active {
+  color: #fff; }
+.panel-heading a:visited {
+  color: #fff; }
+.panel-heading a:hover {
+  color: #fff; }
+
+.avatar {
+  width: 150px;
+  height: 150px; }

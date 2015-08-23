@@ -109,20 +109,28 @@ define(['jquery',
                 {
                     name: 'Simone Murzilli',
                     image: 'images/simone.png',
-                    description: 'Amante della forma.',
-                    html_url: 'https://hub.docker.com/'
+                    description: 'Maps lover.',
+                    html_url: 'https://hub.docker.com/',
+                    url_linkedin: 'https://it.linkedin.com/pub/simone-murzilli/13/a96/130',
+                    url_google: 'https://plus.google.com/103669236874687788343/',
+                    url_twitter: 'https://twitter.com/s_murzilli'
                 },
                 {
                     name: 'Guido Barbaglia',
                     image: 'images/guido.jpg',
-                    description: 'Amante della forma.',
-                    html_url: 'https://hub.docker.com/'
+                    description: 'Software engineer and traveler.',
+                    html_url: 'https://hub.docker.com/',
+                    url_linkedin: 'https://it.linkedin.com/in/guidobarbaglia',
+                    url_google: 'https://plus.google.com/+GuidoBarbaglia/',
+                    url_twitter: 'https://twitter.com/Kalimaha'
                 },
                 {
                     name: 'Stefano Cudini',
                     image: 'images/stefano.png',
-                    description: 'Amante della forma.',
-                    html_url: 'https://hub.docker.com/'
+                    description: 'Climber and paraglider.',
+                    html_url: 'https://hub.docker.com/',
+                    url_twitter: 'https://twitter.com/zakis',
+                    url_google: 'https://plus.google.com/+StefanoCudini/about'
                 }
             ]
         };
