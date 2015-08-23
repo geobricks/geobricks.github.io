@@ -14,7 +14,12 @@ define(['jquery',
             lang: 'en',
             user_id: null,
             placeholder_id: 'placeholder',
-            url_dao: 'http://127.0.0.1:5000/dao/users/prod/'
+            bl: [
+                'surveys-webportal', 'surveys-android', 'surveys-engine', 'surveys-simulator',
+                'SoccerGeoStats', 'jsgeo', 'Playground', 'pgeorest', 'Playground-js', 'pgeo',
+                'geobricks.github.io', 'magic_web', 'magic_modis', 'pgeomodis', 'pgeotrmm',
+                'pgeolandsat', 'geobricks', 'ECOCountriesDemo'
+            ]
         }
 
     }
@@ -42,12 +47,12 @@ define(['jquery',
         //
         //        /* Blacklist. */
         //        var projects = [];
-        //        var bl = [
-        //            'surveys-webportal', 'surveys-android', 'surveys-engine', 'surveys-simulator',
-        //            'SoccerGeoStats', 'jsgeo', 'Playground', 'pgeorest', 'Playground-js', 'pgeo',
-        //            'geobricks.github.io', 'magic_web', 'magic_modis', 'pgeomodis', 'pgeotrmm',
-        //            'pgeolandsat', 'geobricks', 'ECOCountriesDemo'
-        //        ];
+                var bl = [
+                    'surveys-webportal', 'surveys-android', 'surveys-engine', 'surveys-simulator',
+                    'SoccerGeoStats', 'jsgeo', 'Playground', 'pgeorest', 'Playground-js', 'pgeo',
+                    'geobricks.github.io', 'magic_web', 'magic_modis', 'pgeomodis', 'pgeotrmm',
+                    'pgeolandsat', 'geobricks', 'ECOCountriesDemo'
+                ];
         //
         //        /* Add items to be displayed. */
         //        for (var i = 0; i < json.length; i++) {
@@ -75,22 +80,52 @@ define(['jquery',
         //
         //});
 
-        /* Add a Bootstrap row every 4 items. */
-        Handlebars.registerHelper('if_is_row', function (value, options) {
-            if ((1 + value) % 3 === 0)
-                return options.fn(this);
-            return options.inverse(this);
-        });
-
         /* Load main structure. */
         var source = $(templates).filter('#structure').html();
         var template = Handlebars.compile(source);
         var dynamic_data = {
             projects: [
                 {
+                    label: 'Downloader',
+                    name: 'geobricks_downloader',
+                    description: 'Acquire geospatial data from publicly available datasources. The library takes advantage of the plug-in mechanism, one for each data provider, and it is easily extensible.',
+                    html_url: 'https://github.com/geobricks/geobricks_downloader',
+                    language: 'Py'
+                },
+                {
+                    label: 'Leaflet GeoJSON Encoded',
                     name: 'Leaflet.GeoJSON.Encoded',
                     description: 'This Leaflet plugin extends the L.GeoJSON layer using Google polyline encoding algorithm, allowing an optimized data transfer. The algorithm is documented in Google Maps API Docs.',
-                    html_url: 'https://github.com/geobricks/Leaflet.GeoJSON.Encoded'
+                    html_url: 'https://github.com/geobricks/Leaflet.GeoJSON.Encoded',
+                    language: 'JS'
+                },
+                {
+                    label: 'Raster Correlation',
+                    name: 'geobricks_raster_correlation',
+                    description: 'This library allows users to correlate two rasters, compute correlation statistics and the data to generate scatter series plots.<br><br>',
+                    html_url: 'https://github.com/geobricks/geobricks_raster_correlation',
+                    language: 'Py'
+                },
+                {
+                    label: 'Processing',
+                    name: 'geobricks_processing',
+                    description: 'Programmable processing of raster layers: re-projection, mask-based cut, raster maths and much more.<br><br><br>',
+                    html_url: 'https://github.com/geobricks/geobricks_processing',
+                    language: 'Py'
+                },
+                {
+                    label: 'Map Classify',
+                    name: 'geobricks_mapclassify',
+                    description: 'Utilities library capable of generating SLD objects for GeoServer to style thematic maps.<br><br><br><br>',
+                    html_url: 'https://github.com/geobricks/geobricks_mapclassify',
+                    language: 'Py'
+                },
+                {
+                    label: 'GDALCalc Wrapper',
+                    name: 'geobricks_gdal_calc',
+                    description: 'Python wrapper for the popular GDALCalc library.<br><br><br><br><br>',
+                    html_url: 'https://github.com/geobricks/geobricks_gdal_calc',
+                    language: 'Py'
                 }
             ],
             containers: [
