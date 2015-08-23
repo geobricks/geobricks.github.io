@@ -1,0 +1,20 @@
+body {
+  background-color: #dddddd;
+}
+
+.bg-muted {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.menu-item {
+  cursor: pointer;
+  margin-left: 16px;
+  &:hover {
+    color: #337ab7;
+  }
+}
+
+.footer {
+  color: #666666;
+}

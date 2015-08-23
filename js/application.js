@@ -114,7 +114,7 @@ define(['jquery',
                 },
                 {
                     name: 'Guido Barbaglia',
-                    image: 'images/guido.png',
+                    image: 'images/guido.jpg',
                     description: 'Amante della forma.',
                     html_url: 'https://hub.docker.com/'
                 },

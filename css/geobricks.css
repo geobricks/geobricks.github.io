@@ -1,3 +1,15 @@
+body {
+  background-color: #dddddd; }
 
+.bg-muted {
+  background-color: #ffffff;
+  color: #000000; }
 
-/*# sourceMappingURL=geobricks.css.map */
+.menu-item {
+  cursor: pointer;
+  margin-left: 16px; }
+  .menu-item:hover {
+    color: #337ab7; }
+
+.footer {
+  color: #666666; }
