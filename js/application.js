@@ -14,13 +14,7 @@ define(['jquery',
         this.CONFIG = {
             lang: 'en',
             user_id: null,
-            placeholder_id: 'placeholder',
-            bl: [
-                'surveys-webportal', 'surveys-android', 'surveys-engine', 'surveys-simulator',
-                'SoccerGeoStats', 'jsgeo', 'Playground', 'pgeorest', 'Playground-js', 'pgeo',
-                'geobricks.github.io', 'magic_web', 'magic_modis', 'pgeomodis', 'pgeotrmm',
-                'pgeolandsat', 'geobricks', 'ECOCountriesDemo'
-            ]
+            placeholder_id: 'placeholder'
         }
 
     }

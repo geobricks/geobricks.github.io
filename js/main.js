@@ -12,7 +12,8 @@ require.config({
         router: root + '../',
         ROUTER: root + '../js/router',
 
-        views: root + '../js/views'
+        views: root + '../js/views',
+        github_projects: root + '../json'
 
     },
 
