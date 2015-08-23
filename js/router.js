@@ -31,6 +31,7 @@ define(['jquery',
             /* Define the routes. */
             routes: {
                 ''                  :   'home',
+                '(/)home(/)'        :   'home',
                 '(/)projects(/)'    :   'projects'
             }
 
