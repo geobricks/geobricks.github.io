@@ -5,8 +5,8 @@
  */
 /*jslint */
 /*global require: false, define: false, requirejs: false,
-  window: false, clearInterval: false, document: false,
-  self: false, setInterval: false */
+ window: false, clearInterval: false, document: false,
+ self: false, setInterval: false */
 
 
 define(function () {

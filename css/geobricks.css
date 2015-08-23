@@ -1,54 +1,32 @@
-.project {
-  text-align: left;
-  background-color: #fff;
-  padding: 0.5em;
+body {
+  background-color: #dddddd; }
+
+.bg-muted {
+  background-color: #ffffff;
+  color: #000000; }
+
+.menu-item {
   cursor: pointer;
-  min-height: 15em; }
-  .project img {
-    float: right;
-    padding-left: 0.25em;
-    margin-top: 0 !important;
-    padding-top: 0 !important; }
-  .project p {
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 0; }
-  .project h5 {
-    font-weight: normal; }
-  .project h3 {
-    text-decoration: underline; }
+  margin-left: 16px; }
+  .menu-item:hover {
+    color: #337ab7; }
 
-.guido {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../images/guido.jpg) no-repeat; }
+.footer {
+  color: #666666; }
 
-.simone {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../images/simone.png) no-repeat; }
+.panel-heading a:link {
+  color: #fff; }
+.panel-heading a:active {
+  color: #fff; }
+.panel-heading a:visited {
+  color: #fff; }
+.panel-heading a:hover {
+  color: #fff; }
 
-.stefano {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../images/stefano.png) no-repeat; }
+.avatar {
+  width: 150px;
+  height: 150px; }
 
-/*# sourceMappingURL=geobricks.css.map */
+.badge {
+  background-color: #337ab7;
+  padding: 8px; }

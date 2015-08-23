@@ -1,59 +1,35 @@
 define(['jquery',
         'handlebars',
-        'text!html/templates.html',
-        'text!js/modules/geobricks_modis/package.json',
-        'text!js/modules/geobricks_trmm/package.json'], function($, Handlebars, templates, MODIS, TRMM) {
+        'backbone',
+        'text!application/html/templates.hbs',
+        'i18n!application/nls/translate',
+        'ROUTER',
+        'amplify',
+        'domReady!'], function($, Handlebars, Backbone, templates, translate, ROUTER) {
 
     'use strict';
 
     function APP() {
 
-        var lang = 'en';
-
         this.CONFIG = {
-
-            lang: lang
-
-        };
+            lang: 'en',
+            user_id: null,
+            placeholder_id: 'placeholder'
+        }
 
     }
 
     APP.prototype.init = function(config) {
 
-        /* Extend default configuration. */
-        this.CONFIG = $.extend(true, {}, this.CONFIG, config);
-
-        /* Fix the language, if needed. */
-        this.CONFIG.lang = this.CONFIG.lang != null ? this.CONFIG.lang : 'E';
-
         /* This... */
         var _this = this;
 
-        /* Cast object. */
-        MODIS = $.parseJSON(MODIS);
-        TRMM = $.parseJSON(TRMM);
+        /* Extend default configuration. */
+        this.CONFIG = $.extend(true, {}, this.CONFIG, config);
 
-        /* Load button template. */
-        var source = $(templates).filter('#portfolio_item').html();
-        var template = Handlebars.compile(source);
-        var dynamic_data = {
-            label: MODIS.label[this.CONFIG.lang],
-            description: MODIS.description,
-            github_url: MODIS.repository.url
-        };
-        var html = template(dynamic_data);
-        $('#portfolio_content').append(html);
-
-        /* Load button template. */
-        source = $(templates).filter('#portfolio_item').html();
-        template = Handlebars.compile(source);
-        dynamic_data = {
-            label: TRMM.label[this.CONFIG.lang],
-            description: TRMM.description,
-            github_url: TRMM.repository.url
-        };
-        html = template(dynamic_data);
-        $('#portfolio_content').append(html);
+        /* Initiate the routing. */
+        var router = new ROUTER();
+        router.init({});
 
     };
 

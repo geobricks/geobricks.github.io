@@ -1,3 +1,0 @@
-[submodule "js/modules/Leaflet.GeoJSON.Encoded"]
-	path = js/modules/Leaflet.GeoJSON.Encoded
-	url = https://github.com/geobricks/Leaflet.GeoJSON.Encoded.git

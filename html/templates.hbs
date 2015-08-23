@@ -1,0 +1,291 @@
+<script type='text/x-handlebars-template' id='structure'>
+    <div class='container bg-muted'>
+        <section id='header'>
+            <div class='hidden-xs hidden-sm hidden-md hidden-print'>
+                <br>
+                <div data-role='header'>
+                    <div class='row'>
+                        <div class='col-lg-12 pull-right'>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#contacts'>
+                                    <i class='fa fa-envelope'></i> Contacts
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#team'>
+                                    <i class='fa fa-users'></i> Team
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#containers'>
+                                    <i class='fa fa-archive'></i> Containers
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#projects'>
+                                    <i class='fa fa-cogs'></i> Projects
+                                </a>
+                            </span>
+                            <span class='pull-right text-right menu-item'>
+                                <a href='#home'>
+                                    <i class='fa fa-home'></i> Home
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div data-role='content'>
+            <section id='home'>
+                <div class='row'>
+                    <div class='col-lg-4 hidden-xs hidden-sm hidden-md hidden-print'>
+                        <img src='images/apollo.png' class='img-responsive' style='width: 75%; heigth: 75%;'>
+                    </div>
+                    <div class='col-lg-8'>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <h1>
+                                    Welcome to Geobricks!
+                                </h1>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <p style='font-size: 22px; font-weight: 100;'>
+                                    Everything you need to acquire, manipulate and visualize geospatial information. In <b>one</b> convenient place.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <form action='#projects'>
+                                    <button class='btn btn-primary btn-lg' style='width: 100%;'>
+                                        <i class='fa fa-compass' style='font-weight: 100;'></i> Discover our Projects
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id='projects'>
+                <div class='row'>
+                    <div class='col-lg-12 text-center'>
+                        <h1>
+                            Projects
+                        </h1>
+                        <small>
+                            Open source solutions for web GIS.
+                        </small>
+                    </div>
+                </div>
+                <br>
+                <div class='row'>
+                    {{#each projects}}
+                        <div class='col-lg-4'>
+                            <div class='panel panel-primary'>
+                                <div class='panel-heading'>
+                                    <i class='fa fa-external-link'></i>
+                                    <b>
+                                        <a target='_blank' href='{{this.html_url}}'>
+                                            {{this.label}}
+                                        </a>
+
+                                    </b>
+                                    <span class='pull-right'>
+                                        <var>
+                                            {{this.language}}
+                                        </var>
+                                    </span>
+                                </div>
+                                <div class='panel-body'>
+                                    {{{this.description}}}
+                                </div>
+                                <div class='panel-footer'>
+                                    <div class='row' style='padding-right: 0px;'>
+                                        <div class='col-lg-12 pull-right' style='padding-right: 0px;'>
+                                            <span class='pull-right text-right'>
+                                                <iframe src="https://ghbtns.com/github-btn.html?user=geobricks&repo={{this.name}}&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                                            </span>
+                                            <span class='pull-right text-right'>
+                                                <iframe src="https://ghbtns.com/github-btn.html?user=geobricks&repo={{this.name}}&type=fork&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+                <br>
+                <div class='row'>
+                    <div class='col-lg-12 pull-right text-right'>
+                        <a>
+                            <span class='badge' id='show_projects_button'>
+                                Show All Projects
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id='containers'>
+                <div class='row'>
+                    <div class='col-lg-12 text-center'>
+                        <h1>
+                            Docker Containers
+                        </h1>
+                        <small>
+                            Start Playing with Geobricks in Few Minutes
+                        </small>
+                    </div>
+                </div>
+                <br>
+                <div class='row'>
+                    {{#each containers}}
+                        <div class='col-lg-6'>
+                            <div class='panel panel-primary'>
+                                <div class='panel-heading'>
+                                    <i class='fa fa-external-link'></i>
+                                    <b>
+                                        <a target='_blank' href='{{this.html_url}}'>
+                                            {{this.name}}
+                                        </a>
+                                    </b>
+                                </div>
+                                <div class='panel-body'>
+                                    {{this.description}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+            <hr>
+            <section id='team'>
+                <div class='row'>
+                    <div class='col-lg-12 text-center'>
+                        <h1>
+                            Team
+                        </h1>
+                        <small>
+                            Meet the Geobricks Team
+                        </small>
+                    </div>
+                </div>
+                <br>
+                <div class='row'>
+                    {{#each developers}}
+                        <div class='col-lg-4'>
+                            <div class='panel panel-primary'>
+                                <div class='panel-heading'>
+                                    <b>
+                                        {{this.name}}
+                                    </b>
+                                </div>
+                                <div class='panel-body'>
+                                    <div class='row'>
+                                        <img class='img-responsive img-circle center-block hidden-xs hidden-sm hidden-md hidden-print avatar' src='{{image}}'>
+                                    </div>
+                                    <br>
+                                    <div class='row'>
+                                        <div class='col-lg-12 text-left'>
+                                            {{this.description}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='panel-footer'>
+                                    <div class='row'>
+                                        <div class='col-lg-12 text-center'>
+                                            {{#if this.url_google}}
+                                                <a target='_blank' href='{{this.url_google}}'>
+                                                    <i class='fa fa-google-plus'></i>
+                                                </a>
+                                                |
+                                            {{/if}}
+                                            {{#if this.url_linkedin}}
+                                                <a target='_blank' href='{{this.url_linkedin}}'>
+                                                    <i class='fa fa-linkedin'></i>
+                                                </a>
+                                                |
+                                            {{/if}}
+                                            {{#if this.url_twitter}}
+                                                <a target='_blank' href='{{this.url_twitter}}'>
+                                                    <i class='fa fa-twitter'></i>
+                                                </a>
+                                            {{/if}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+            <hr>
+            <section id='contacts'>
+                <div class='row'>
+                    <div class='col-lg-12 text-center'>
+                        <h1>
+                            Contacts
+                        </h1>
+                        <small>
+                            We'd Love to Hear From You
+                        </small>
+                    </div>
+                    <div class='col-lg-12'>
+                        <div class='row' style='margin-top: 16px;'>
+                            <div class='col-lg-12 text-center'>
+                                <a target='_blank' href='mailto:guido.barbaglia@gmail.com'>
+                                    <span class='fa-stack fa-lg'>
+                                        <i class='fa fa-circle fa-stack-2x'></i>
+                                        <i class='fa fa-envelope fa-stack-1x fa-inverse'></i>
+                                    </span>
+                                </a>
+                                <a target='_blank' href='https://www.facebook.com/GeoBricks'>
+                                    <span class='fa-stack fa-lg'>
+                                        <i class='fa fa-circle fa-stack-2x'></i>
+                                        <i class='fa fa-facebook fa-stack-1x fa-inverse'></i>
+                                    </span>
+                                </a>
+                                <a target='_blank' href='https://plus.google.com/117890680961905828298/about'>
+                                    <span class='fa-stack fa-lg'>
+                                        <i class='fa fa-circle fa-stack-2x'></i>
+                                        <i class='fa fa-google-plus fa-stack-1x fa-inverse'></i>
+                                    </span>
+                                </a>
+                                <a target='_blank' href='https://www.linkedin.com/company/3131026'>
+                                    <span class='fa-stack fa-lg'>
+                                        <i class='fa fa-circle fa-stack-2x'></i>
+                                        <i class='fa fa-linkedin fa-stack-1x fa-inverse'></i>
+                                    </span>
+                                </a>
+                                <a target='_blank' href='https://twitter.com/GeoBricks'>
+                                    <span class='fa-stack fa-lg'>
+                                        <i class='fa fa-circle fa-stack-2x'></i>
+                                        <i class='fa fa-twitter fa-stack-1x fa-inverse'></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id='footer'>
+                <div data-role='footer' class='footer'>
+                    <div class='row'>
+                        <div class='col-lg-12 text-center'>
+                            © Geobricks 2015. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </div>
+    </div>
+</script>
