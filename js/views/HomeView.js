@@ -26,42 +26,42 @@ define(function (require) {
                         name: 'geobricks_downloader',
                         description: 'Acquire geospatial data from publicly available datasources. The library takes advantage of the plug-in mechanism, one for each data provider, and it is easily extensible.',
                         html_url: 'https://github.com/geobricks/geobricks_downloader',
-                        language: 'Py'
+                        language: 'Python'
                     },
                     {
                         label: 'Leaflet GeoJSON Encoded',
                         name: 'Leaflet.GeoJSON.Encoded',
                         description: 'This Leaflet plugin extends the L.GeoJSON layer using Google polyline encoding algorithm, allowing an optimized data transfer. The algorithm is documented in Google Maps API Docs.',
                         html_url: 'https://github.com/geobricks/Leaflet.GeoJSON.Encoded',
-                        language: 'JS'
+                        language: 'JavaScript'
                     },
                     {
                         label: 'Raster Correlation',
                         name: 'geobricks_raster_correlation',
                         description: 'This library allows users to correlate two rasters, compute correlation statistics and the data to generate scatter series plots.<br><br>',
                         html_url: 'https://github.com/geobricks/geobricks_raster_correlation',
-                        language: 'Py'
+                        language: 'Python'
                     },
                     {
                         label: 'Processing',
                         name: 'geobricks_processing',
                         description: 'Programmable processing of raster layers: re-projection, mask-based cut, raster maths and much more.<br><br><br>',
                         html_url: 'https://github.com/geobricks/geobricks_processing',
-                        language: 'Py'
+                        language: 'Python'
                     },
                     {
                         label: 'Map Classify',
                         name: 'geobricks_mapclassify',
                         description: 'Utilities library capable of generating SLD objects for GeoServer to style thematic maps.<br><br><br><br>',
                         html_url: 'https://github.com/geobricks/geobricks_mapclassify',
-                        language: 'Py'
+                        language: 'Python'
                     },
                     {
                         label: 'GDALCalc Wrapper',
                         name: 'geobricks_gdal_calc',
                         description: 'Python wrapper for the popular GDALCalc library.<br><br><br><br><br>',
                         html_url: 'https://github.com/geobricks/geobricks_gdal_calc',
-                        language: 'Py'
+                        language: 'Python'
                     }
                 ],
                 containers: [
