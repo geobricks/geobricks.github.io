@@ -201,6 +201,12 @@
                                 <div class='panel-footer'>
                                     <div class='row'>
                                         <div class='col-lg-12 text-center'>
+                                            {{#if this.url_github}}
+                                                <a target='_blank' href='{{this.url_github}}'>
+                                                    <i class='fa fa-github'></i>
+                                                </a>
+                                                |
+                                            {{/if}}
                                             {{#if this.url_google}}
                                                 <a target='_blank' href='{{this.url_google}}'>
                                                     <i class='fa fa-google-plus'></i>
@@ -256,6 +262,12 @@
                                     <span class='fa-stack fa-lg'>
                                         <i class='fa fa-circle fa-stack-2x'></i>
                                         <i class='fa fa-google-plus fa-stack-1x fa-inverse'></i>
+                                    </span>
+                                </a>
+                                <a target='_blank' href='https://github.com/geobricks'>
+                                    <span class='fa-stack fa-lg'>
+                                        <i class='fa fa-circle fa-stack-2x'></i>
+                                        <i class='fa fa-github fa-stack-1x fa-inverse'></i>
                                     </span>
                                 </a>
                                 <a target='_blank' href='https://www.linkedin.com/company/3131026'>
