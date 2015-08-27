@@ -21,16 +21,16 @@ body {
 
 .panel-heading {
   a:link {
-    color: #fff;
+    color: #ffffff;
   }
   a:active {
-    color: #fff;
+    color: #ffffff;
   }
   a:visited {
-    color: #fff;
+    color: #ffffff;
   }
   a:hover {
-    color: #fff;
+    color: #ffffff;
   }
 }
 
@@ -42,4 +42,17 @@ body {
 .badge {
   background-color: #337ab7;
   padding: 8px;
+}
+
+.panel-primary>.panel-heading {
+  background-image: url('../images/paper.jpg');
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-image: url('../images/paper.jpg');
+}
+
+.badge {
+  background-image: url('../images/paper.jpg');
 }
