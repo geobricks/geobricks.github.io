@@ -95,7 +95,8 @@ define(function (require) {
                         url_linkedin: 'https://it.linkedin.com/in/guidobarbaglia',
                         url_google: 'https://plus.google.com/+GuidoBarbaglia/',
                         url_twitter: 'https://twitter.com/Kalimaha',
-                        url_github: 'https://github.com/Kalimaha'
+                        url_github: 'https://github.com/Kalimaha',
+                        url_personal_page: 'guido'
                     },
                     {
                         name: 'Stefano Cudini',
@@ -114,6 +115,11 @@ define(function (require) {
             /* Bind button. */
             $('#show_projects_button').click(function() {
                 Backbone.history.navigate('/projects/', {trigger: true});
+            });
+
+            /* Bind personal pages. */
+            $('#guido').click(function () {
+                Backbone.history.navigate('/guido/', {trigger: true});
             });
 
             /* Return... */

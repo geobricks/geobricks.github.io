@@ -2,7 +2,8 @@ define(['jquery',
         'backbone',
         'views/HomeView',
         'views/ProjectsView',
-        'domReady!'], function($, Backbone, HomeView, ProjectsView) {
+        'views/GuidoView',
+        'domReady!'], function($, Backbone, HomeView, ProjectsView, GuidoView) {
 
     'use strict';
 
@@ -32,6 +33,7 @@ define(['jquery',
             routes: {
                 ''                  :   'home',
                 '(/)home(/)'        :   'home',
+                '(/)guido(/)'       :   'guido',
                 '(/)projects(/)'    :   'projects'
             }
 
@@ -56,6 +58,17 @@ define(['jquery',
 
             /* Display projects. */
             var view = new ProjectsView({
+                placeholder: _this.CONFIG.placeholder_id
+            });
+            view.render();
+
+        });
+
+        /* Guido. */
+        app_router.on('route:guido', function (lang) {
+
+            /* Display projects. */
+            var view = new GuidoView({
                 placeholder: _this.CONFIG.placeholder_id
             });
             view.render();

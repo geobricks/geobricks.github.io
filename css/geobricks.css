@@ -40,3 +40,12 @@ body {
 
 .badge {
   background-image: url("../images/paper.jpg"); }
+
+#guido a:link {
+  color: #ffffff !important; }
+#guido a:active {
+  color: #ffffff !important; }
+#guido a:visited {
+  color: #ffffff !important; }
+#guido a:hover {
+  color: #ffffff !important; }
