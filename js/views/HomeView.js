@@ -96,7 +96,7 @@ define(function (require) {
                         url_google: 'https://plus.google.com/+GuidoBarbaglia/',
                         url_twitter: 'https://twitter.com/Kalimaha',
                         url_github: 'https://github.com/Kalimaha',
-                        url_personal_page: 'guido'
+                        url_personal_page: 'team/guido'
                     },
                     {
                         name: 'Stefano Cudini',

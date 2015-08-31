@@ -15,7 +15,7 @@ define(['jquery',
 
     }
 
-    ROUTER.prototype.init = function(config) {
+    ROUTER.prototype.init = function (config) {
 
         /* Extend default configuration. */
         this.CONFIG = $.extend(true, {}, this.CONFIG, config);
@@ -31,10 +31,10 @@ define(['jquery',
 
             /* Define the routes. */
             routes: {
-                ''                  :   'home',
-                '(/)home(/)'        :   'home',
-                '(/)guido(/)'       :   'guido',
-                '(/)projects(/)'    :   'projects'
+                ''                      :   'home',
+                '(/)home(/)'            :   'home',
+                '(/)team(/):name(/)'    :   'team',
+                '(/)projects(/)'        :   'projects'
             }
 
         });
@@ -65,11 +65,12 @@ define(['jquery',
         });
 
         /* Guido. */
-        app_router.on('route:guido', function (lang) {
+        app_router.on('route:team', function (name) {
 
             /* Display projects. */
             var view = new GuidoView({
-                placeholder: _this.CONFIG.placeholder_id
+                placeholder: _this.CONFIG.placeholder_id,
+                name: name
             });
             view.render();
 
