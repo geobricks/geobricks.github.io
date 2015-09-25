@@ -96,7 +96,7 @@ define(function (require) {
                         url_google: 'https://plus.google.com/+GuidoBarbaglia/',
                         url_twitter: 'https://twitter.com/Kalimaha',
                         url_github: 'https://github.com/Kalimaha',
-                        url_personal_page: 'team/guido'
+                        url_personal_page: '#team/guido'
                     },
                     {
                         name: 'Stefano Cudini',
@@ -105,7 +105,8 @@ define(function (require) {
                         html_url: 'https://hub.docker.com/',
                         url_twitter: 'https://twitter.com/zakis',
                         url_google: 'https://plus.google.com/+StefanoCudini/about',
-                        url_github: 'https://github.com/stefanocudini'
+                        url_github: 'https://github.com/stefanocudini',
+                        url_personal_page: 'http://labs.easyblog.it/'
                     }
                 ]
             };
