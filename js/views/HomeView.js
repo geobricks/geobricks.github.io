@@ -110,18 +110,31 @@ define(function (require) {
                     }
                 ]
             };
-            var html = template(dynamic_data);
-            $('#' + this.options.placeholder).html(html);
+            
+            var $struct = $('#' + this.options.placeholder);
+			
+            $struct.html( template(dynamic_data) );
 
             /* Bind button. */
-            $('#show_projects_button').click(function() {
+            $('#show_projects_button').on('click', function() {
                 Backbone.history.navigate('/projects/', {trigger: true});
             });
 
             /* Bind personal pages. */
-            $('#guido').click(function () {
+            $('#guido').on('click', function () {
                 Backbone.history.navigate('/guido/', {trigger: true});
             });
+
+			/* Bind personal pages. */
+            $struct.on('mouseenter','.panel-project', function(e) {
+            	if(!$(this).data('mouseenter')) {
+	            	$(this).data('mouseenter',true).find('.gitbtns').css('visibility','visible')
+	            		.find('iframe').each(function() {
+	            			$(this).attr('src', $(this).data('src') );
+	            		});
+            	}
+            });
+
 
             /* Return... */
             return this;
